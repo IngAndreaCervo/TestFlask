@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% if nome_corso =='flask' %}
+
+    <h2> Questo è il corso di {{nome_corso}}</h2>
+    <br/>
+    <ul>
+        <li> Lezione 1: Flask</li>
+        <li> Blabla </li>
+    </ul>
+    {% else %}
+    <h2> Attenzione! Questo non è il corso giusto </h2>
+    {% endif %}
+{% endblock content %}

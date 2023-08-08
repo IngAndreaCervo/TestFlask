@@ -7,6 +7,17 @@ def index():
     wow ="beautiful"
     return render_template("index.html")
 
+@app.route("/esempio/")
+def esempio_jinja():
+    return render_template("flask.html")
+
+@app.route("/course/flask/<name>")
+def course_flask(name):
+    return render_template("corso-flask.html", nome_corso=name)
+
+def esempio_jinja():
+    return render_template("flask.html")
+
 @app.route("/info/")
 def info():
     return f"<h2> Queste sono un sacco di informazioni </h2>"
